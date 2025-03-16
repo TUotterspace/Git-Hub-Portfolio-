@@ -1,42 +1,92 @@
+/* General Body Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fff; /* White background */
+    color: #333; /* Default text color */
 }
 
+/* Header Styling - USA Blue */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
+    background-color: #003366; /* Dark blue color for the header */
+    color: white;
+    padding: 20px;
     text-align: center;
 }
 
+/* Navigation Styles */
 nav a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     margin: 0 15px;
+    font-size: 18px;
 }
 
+/* About Me Section Styling */
 .about-me {
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #f4f4f4; /* Light grey background */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
+/* Title and Headings */
+h1, h2, h3 {
     font-family: 'Helvetica', sans-serif;
 }
 
+/* Star Styling */
+.usa-flag {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Fun Fact Star Styling - Simple stars using CSS */
+.star {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    display: inline-block;
+    margin-right: 5px;
+}
+
+/* Footer Styling */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #003366; /* Blue color for footer */
+    color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 15px;
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Red accent styling for links */
+a {
+    color: #d20000; /* Red color for links */
+    text-decoration: none;
+}
+
+/* Red Hover Effect for Links */
+a:hover {
+    text-decoration: underline;
+    color: #990000; /* Darker red on hover */
+}
+
+/* Create a red and white striped background pattern */
+.stripes {
+    background: repeating-linear-gradient(0deg, red, red 10px, white 10px, white 20px);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
