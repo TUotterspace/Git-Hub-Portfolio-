@@ -9,10 +9,18 @@
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 50px;
+            background-color: #f4f4f4; /* Light background color */
         }
+
         h1 {
             color: #333;
         }
+
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+
         a {
             display: inline-block;
             margin-top: 20px;
@@ -22,14 +30,37 @@
             color: white;
             border-radius: 5px;
         }
+
         a:hover {
             background-color: #0056b3;
+        }
+
+        /* Centering images and setting size */
+        .images {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Spacing between the images */
+            margin-top: 40px;
+        }
+
+        .images img {
+            width: 300px; /* Adjust this size to make images bigger or smaller */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
 <body>
     <h1>Welcome to My GitHub Page</h1>
     <p>If you see this, your GitHub Pages deployment is working!</p>
+    
+    <!-- Displaying images side by side -->
+    <div class="images">
+        <img src="https://raw.githubusercontent.com/TUotterspace/Git-Hub-Portfolio-/refs/heads/main/OIP%20(4).jpg" alt="Image 1">
+        <img src="https://raw.githubusercontent.com/TUotterspace/Git-Hub-Portfolio-/refs/heads/main/13bb6c4f8e72e51d6a7011043b991428--submarines-flags.jpg" alt="Image 2">
+    </div>
+    
     <a href="about.html">Go to About Page</a>
 </body>
 </html>
