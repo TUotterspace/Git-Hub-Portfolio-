@@ -5,10 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My GitHub Page</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f4f4f4; /* Light background color */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: space-between; /* Push content to top and bottom */
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            text-decoration: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Centering images and setting size */
+        .images {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Spacing between the images */
+            margin-top: 40px;
+        }
+
+        .images img {
+            width: 300px; /* Adjust this size to make images bigger or smaller */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style for "Go to About Page" link */
+        .go-to-about {
+            font-weight: bold;
+            color: black;
+            text-align: center;
+            margin-top: 20px;
+            padding: 15px;
+            font-size: 18px;
+        }
+        
+        .go-to-about a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .go-to-about a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to My GitHub Page</h1>
-    <p>If you see this, your GitHub Pages deployment is working!</p>
+   
     
     <!-- Displaying images side by side -->
     <div class="images">
@@ -16,6 +85,9 @@
         <img src="https://raw.githubusercontent.com/TUotterspace/Git-Hub-Portfolio-/refs/heads/main/13bb6c4f8e72e51d6a7011043b991428--submarines-flags.jpg" alt="Image 2">
     </div>
     
-    <a href="about.html">Go to About Page</a>
+    <!-- "Go to About Page" link at the bottom -->
+    <div class="go-to-about">
+        <a href="about.html">Go to About Page</a>
+    </div>
 </body>
 </html>
