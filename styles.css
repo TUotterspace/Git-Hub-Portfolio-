@@ -3,8 +3,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff; /* White background */
-    color: #333; /* Default text color */
+    color: #333;
+    background: linear-gradient(white 50%, red 50%); /* Red and white stripes */
+    background-size: 100% 15px; /* Repeating background with 15px tall stripes */
+    background-repeat: repeat-y; /* Repeat stripes vertically */
 }
 
 /* Header Styling - USA Blue */
@@ -13,6 +15,7 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    position: relative; /* To ensure the blue field is properly placed on top */
 }
 
 /* Navigation Styles */
@@ -38,22 +41,12 @@ h1, h2, h3 {
     font-family: 'Helvetica', sans-serif;
 }
 
-/* Star Styling */
+/* Star Styling (for Fun Facts section) */
 .usa-flag {
     width: 150px;
     height: auto;
     display: block;
     margin: 20px auto;
-}
-
-/* Fun Fact Star Styling - Simple stars using CSS */
-.star {
-    width: 10px;
-    height: 10px;
-    background-color: #fff;
-    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-    display: inline-block;
-    margin-right: 5px;
 }
 
 /* Footer Styling */
@@ -79,9 +72,51 @@ a:hover {
     color: #990000; /* Darker red on hover */
 }
 
-/* Create a red and white striped background pattern */
+/* Create a blue field on the top-left of the screen for the stars */
+.body-flag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%; /* Field size for blue background */
+    height: 50%; /* Cover top-left portion of screen */
+    background-color: #003366; /* Dark blue */
+}
+
+/* Create a star effect in the blue field (can be just a few stars for simplicity) */
+.star {
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    position: absolute;
+    display: inline-block;
+    top: 10px;
+    left: 10px;
+}
+
+.star:nth-child(2) {
+    top: 30px;
+    left: 30px;
+}
+
+.star:nth-child(3) {
+    top: 50px;
+    left: 50px;
+}
+
+.star:nth-child(4) {
+    top: 70px;
+    left: 10px;
+}
+
+.star:nth-child(5) {
+    top: 70px;
+    left: 30px;
+}
+
+/* Add the background stripes for the flag */
 .stripes {
-    background: repeating-linear-gradient(0deg, red, red 10px, white 10px, white 20px);
+    background: repeating-linear-gradient(0deg, red, red 7.7px, white 7.7px, white 15px); /* USA flag pattern */
     height: 100%;
     position: absolute;
     top: 0;
